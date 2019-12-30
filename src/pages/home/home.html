@@ -1,17 +1,193 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>Home</ion-title>
+<ion-header mode="md">
+  <ion-navbar mode="md">
+    <ion-title>Discover</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="ios-search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <ion-card id="daily-insights">
+    <h1>Daily <br/> Insights</h1>
+  </ion-card>
+
+  <div class="book-slider today">
+    <ion-row>
+      <ion-col col-8>
+        <h3>Today for you</h3>
+      </ion-col>
+      <ion-col col-4>
+        <p>See all <ion-icon name="ios-arrow-forward"></ion-icon></p>
+      </ion-col>
+    </ion-row>
+    <ion-slides slidesPerView="2">
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="book-slider">
+    <ion-row>
+      <ion-col col-8>
+        <h3>New Releases</h3>
+      </ion-col>
+      <ion-col col-4>
+        <p>See all <ion-icon name="ios-arrow-forward"></ion-icon></p>
+      </ion-col>
+    </ion-row>
+    <ion-slides slidesPerView="2">
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="book-slider">
+    <ion-row>
+      <ion-col>
+        <h3>Collections</h3>
+      </ion-col>
+    </ion-row>
+    <ion-slides>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="book-slider">
+    <ion-row>
+      <ion-col col-8>
+        <h3>Coming Soon</h3>
+      </ion-col>
+      <ion-col col-4>
+        <p>See all <ion-icon name="ios-arrow-forward"></ion-icon></p>
+      </ion-col>
+    </ion-row>
+    <ion-slides slidesPerView="2">
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="book-slider">
+    <ion-row>
+      <ion-col col-8>
+        <h3>All Books</h3>
+      </ion-col>
+      <ion-col col-4>
+        <p>See all <ion-icon name="ios-arrow-forward"></ion-icon></p>
+      </ion-col>
+    </ion-row>
+    <ion-slides slidesPerView="2">
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+          <h4>Author Name</h4>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div class="categories">
+    <ion-row>
+      <ion-col>
+        <h3>Categories</h3>
+      </ion-col>
+    </ion-row>
+    <ion-slides slidesPerView="3">
+      <ion-slide>
+        <ion-card>
+          <h4>Category Name</h4>
+          <ion-icon name="ios-speedometer"></ion-icon>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <h4>Category Name</h4>
+          <ion-icon name="ios-speedometer"></ion-icon>
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card>
+          <h4>Category Name</h4>
+          <ion-icon name="ios-speedometer"></ion-icon>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
 </ion-content>

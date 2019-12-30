@@ -1,3 +1,111 @@
 page-home {
 
+    #daily-insights {
+        background-color: #0093e9;
+        background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+        box-shadow: 0px 10px 20px 0px rgba(0,147,233,0.4);
+        padding: 50px 20px;
+        border-radius: 10px;
+
+        h1 {
+            color: #fff;
+            font-weight: 600;
+        }
+    }
+
+    .book-slider {
+        
+        &.today {
+            margin-top: 20px;
+        }
+
+        margin-top: 10px;
+        padding: 0px 5px;
+
+        h3 {
+            margin: 0px;
+            font-size: 21px;
+        }
+
+        p {
+            text-align: right;
+            // margin: 4px 0px;
+            font-weight: 600;
+            color: gray;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            ion-icon {
+                padding-left: 5px;
+                font-weight: 700;
+                font-size: 1em;              
+            }
+        }
+
+        ion-slides {
+            ion-slide {
+
+                ion-card {
+                    background: transparent;
+                    box-shadow: none;
+
+                    img {
+                        border-radius: 5px;
+                        width: 100%;
+                        box-shadow: 0px 10px 20px 0px rgba(117, 117, 117, 0.4);
+                    }
+
+                    h4 {
+                        padding: 10px 0px;
+                        margin: 0px;
+                        text-align: left;                     
+                    }
+                }
+            }
+        }
+    }
+
+    .categories {
+
+        margin-top: 10px;
+        padding: 0px 5px;
+
+        h3 {
+            margin: 0px;
+            font-size: 21px;
+        }
+
+        ion-slides {
+            ion-slide {
+                .slide-zoom {
+                    padding-bottom: 10px;
+
+                    ion-card {
+                        background: #fff;
+                        box-shadow: none;
+                        box-shadow: 0px 10px 20px 0px rgba(117, 117, 117, 0.4);
+                        padding: 10px;
+                        height: 125px;
+    
+                        h4 {
+                            padding: 10px 0px;
+                            margin: 0px;
+                            text-align: left;
+                            font-weight: 600;             
+                        }
+    
+                        ion-icon {
+                            font-size: 50px;
+                            color: #0093e9;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
 }
+

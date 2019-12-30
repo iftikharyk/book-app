@@ -1,11 +1,52 @@
-<ion-header>
-  <ion-navbar>
+<ion-header mode="md">
+  <ion-navbar mode="md">
     <ion-title>
-      About
+      Library
     </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="ios-search"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
+  <ion-segment [(ngModel)]="libraryCount" mode="md">
+    <ion-segment-button value="books" checked>
+      Books <span>0</span>
+    </ion-segment-button>
+    <ion-segment-button value="highlights">
+      Highlights <span>0</span>
+    </ion-segment-button>
+  </ion-segment>
 </ion-header>
 
 <ion-content padding>
+  <div [ngSwitch]="libraryCount" *ngIf="library == true">
+    <ion-list *ngSwitchCase="'books'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+    </ion-list>
+    
+    <ion-list *ngSwitchCase="'highlights'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+    </ion-list>
+  </div>
 
+  <div class="empty-library text-center">
+    <ion-row>
+      <ion-col>
+        <ion-icon name="bookmarks" class="book-icon"></ion-icon>
+        <h3>Easy to find</h3>
+        <button ion-button class="btn-custom"><ion-icon name="ios-compass"></ion-icon> Discover All Books</button>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>
