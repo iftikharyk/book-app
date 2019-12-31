@@ -25,6 +25,8 @@ body {
     text-align: center;
 }
 
+ion-app.ios [padding] .scroll-content, ion-app.md [padding] .scroll-content { padding: 9px; }
+
 .header {
     box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.1);
 

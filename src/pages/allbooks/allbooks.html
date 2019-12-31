@@ -7,6 +7,11 @@
 <ion-header>
 
   <ion-navbar>
+    <ion-buttons start class="custom-back-button">
+      <button ion-button icon-only (click)="this.viewCtrl.dismiss();">
+        <ion-icon name="ios-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>allbooks</ion-title>
   </ion-navbar>
 
@@ -14,5 +19,12 @@
 
 
 <ion-content padding>
-
+  <ion-row>
+    <ion-col col-4>
+      <ion-card class="book-card">
+        <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
+        <h4>Author Name</h4>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>
