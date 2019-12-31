@@ -15,7 +15,7 @@ import { AllbooksPage } from '../pages/allbooks/allbooks';
 import { CommingsoonPage } from '../pages/commingsoon/commingsoon';
 import { NewreleasesPage } from '../pages/newreleases/newreleases';
 import { TodayforyouPage } from '../pages/todayforyou/todayforyou';
-
+import { BookdetailPage } from '../pages/bookdetail/bookdetail';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AllbooksPage,
     CommingsoonPage,
     NewreleasesPage,
-    TodayforyouPage
+    TodayforyouPage,
+    BookdetailPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +55,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AllbooksPage,
     CommingsoonPage,
     NewreleasesPage,
-    TodayforyouPage
+    TodayforyouPage,
+    BookdetailPage
   ],
   providers: [
     StatusBar,

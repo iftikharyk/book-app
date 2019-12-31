@@ -6,7 +6,68 @@
 -->
 
 <ion-content padding>
-  <div id="custom-cancel">
-    <ion-icon name="close" (click)="this.viewCtrl.dismiss();"></ion-icon>
+  <ion-row style="margin-top: 20px;">
+    <ion-col col-2>
+      <div id="custom-cancel">
+        <ion-icon name="md-close" (click)="this.viewCtrl.dismiss();"></ion-icon>
+      </div>
+    </ion-col>
+    <ion-col col-8>
+      <div class="image-container">
+        <img src="assets/imgs/bookcover.jpg" alt="book cover">
+      </div>
+    </ion-col>
+    <ion-col col-2>
+      <div id="custom-cancel">
+        <ion-icon name="md-share"></ion-icon>
+      </div>
+    </ion-col>
+  </ion-row>
+  
+  <div id="info">
+    <ion-row>
+      <ion-col>
+        <h2>The 7 Habits of Highly Effective People</h2>
+        <p>Stephen Covey</p>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div id="control-buttons">
+    <ion-row>
+      <ion-col>
+        <div class="button-group">
+          <button ion-button class="btn-custom"><ion-icon name="md-headset"></ion-icon> Listen</button>
+          <span class="middle-pipe">|</span>
+          <button ion-button class="btn-custom"><ion-icon name="md-headset"></ion-icon> Read</button>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div class="cards-button">
+          <button ion-button class="btn-custom"><ion-icon name="ios-browsers"></ion-icon> Cards</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <div class="divider"></div>
+
+  <div id="description">
+    <ion-row>
+      <ion-col>
+        <p class="category"><span>Category:</span> Productivity</p>
+      </ion-col>
+    </ion-row>
+    
+    <ion-row>
+      <ion-col>
+        <h4>Description:</h4>
+        <p class="describe">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur!
+        </p>
+      </ion-col>
+    </ion-row>
   </div>
 </ion-content>

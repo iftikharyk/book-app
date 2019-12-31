@@ -1,12 +1,126 @@
 page-bookdetail {
-    #custom-cancel {
-        position: absolute;
-        left: 20px;
-        top: 20px;
+    .scroll-content {
+        padding-top: 30px;
+    }
 
+    #custom-cancel {
+        text-align: center;
+        
         ion-icon {
-            font-size: 25px;
-            color: #000;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+
+    .image-container {
+        text-align: center;
+
+        img {
+            width: 180px;
+            border-radius: 10px;
+        }
+    }
+
+    #info {
+        text-align: center;
+
+        h2 {
+            font-weight: 600;
+        }
+
+        p {
+            margin-top: 5px;
+            font-weight: 500;
+            color: slategray;
+        }
+    }
+
+    #control-buttons {
+        text-align: center;
+        padding: 0px 30px;
+
+        .button-group {
+            position: relative;
+            border-radius: 20px;
+            background: #0093e9;
+            box-shadow: 0px 10px 20px 0px rgba(0,147,233,0.4);
+
+            .btn-custom {
+                border-radius: 0px;
+                height: auto;
+                padding: 10px 20px;
+                background: transparent;
+                box-shadow: none;
+                font-size: 14px;
+                font-weight: 300;
+                width: 45%;
+
+                ion-icon {
+                    padding-right: 5px;
+                    font-size: 1.5em;
+                }
+            }
+
+            span.middle-pipe {
+                width: 10%;
+                font-size: 35px;
+                font-weight: 300;
+                color: #fff;
+                position: absolute;
+                left: 50%;
+                top: 2px;
+                transform: translateX(-50%);
+            }
+        }
+        
+        .cards-button {
+            .btn-custom {
+                padding: 15px 20px;
+                height: auto;
+                font-size: 14px;
+                font-weight: 300;
+                border-radius: 20px;
+                background: #d4d4d4;
+                box-shadow: 0px 10px 20px 0px rgba(162, 162, 162, 0.4);
+                width: 100%;
+                color: #131313;
+                margin-top: 15px;
+
+                ion-icon {
+                    padding-right: 5px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .divider {
+        width: 90%;
+        height: 1px;
+        background: #e0e0e0;
+        margin: 40px auto;
+    }
+
+    #description {
+        .category {
+                font-size: 16px;
+                color: slategray;
+                font-weight: 300;
+            span {
+                color: black;
+                font-weight: 500;
+            }
+        }
+
+        h4 {
+            font-weight: 500;
+            color: black;
+            margin-bottom: 5px;
+        }
+
+        .describe {
+            font-weight: normal;
+            color: black;
         }
     }
 }
