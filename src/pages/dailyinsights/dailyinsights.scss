@@ -1,0 +1,80 @@
+page-dailyinsights {
+    ion-content {
+        background: url("../../assets/imgs/daily.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+        #custom-cancel {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+            ion-icon {
+                font-size: 25px;
+                color: #fff;
+            }
+        }
+
+        #title {
+            text-align: center;
+            margin-top: 20px;
+
+            ion-icon.lightning {
+                font-size: 50px;
+                color: #87c2e9;
+            }
+            
+            h3 {
+                color: #fff;
+                font-size: 2.4rem;
+                margin-top: 5px;
+                margin-bottom: 10px;
+            }
+
+            .custom-badge {
+                border: 1px solid #fff;
+                padding: 5px 13px;
+                font-size: 12px;
+                border-radius: 10px;
+                color: #fff;
+                font-weight: 300;
+            }
+        }
+
+        #daily-slides {
+            margin-top: 40px;
+
+            ion-slides {
+                ion-slide {
+                    .slide-zoom {
+    
+                        ion-card {
+                            background: #fff;
+                            box-shadow: none;
+                            // box-shadow: 0px 10px 20px 0px rgba(117, 117, 117, 0.4);
+                            padding: 25px 15px;
+                            height: 300px;
+                            border-radius: 10px;
+                            overflow-y: scroll;
+                            text-align: left;
+        
+                            .daily-card-content {
+                                p {
+                                    font-size: 14px;
+                                    color: #000;
+                                    font-weight: 500;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+
+                // .swiper-container-horizontal > .swiper-pagination-progress {
+
+                // }
+            }
+        }
+    }
+}

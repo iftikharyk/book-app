@@ -11,8 +11,8 @@ import { RegisterPage } from '../pages/register/register';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = TabsPage;
-  rootPage:any = LoginPage;
+  rootPage:any = TabsPage;
+  // rootPage:any = LoginPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

@@ -10,6 +10,12 @@ import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/register/register';
+import { DailyinsightsPage } from '../pages/dailyinsights/dailyinsights';
+import { AllbooksPage } from '../pages/allbooks/allbooks';
+import { CommingsoonPage } from '../pages/commingsoon/commingsoon';
+import { NewreleasesPage } from '../pages/newreleases/newreleases';
+import { TodayforyouPage } from '../pages/todayforyou/todayforyou';
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -23,7 +29,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    DailyinsightsPage,
+    AllbooksPage,
+    CommingsoonPage,
+    NewreleasesPage,
+    TodayforyouPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ProfilePage,
     TabsPage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    DailyinsightsPage,
+    AllbooksPage,
+    CommingsoonPage,
+    NewreleasesPage,
+    TodayforyouPage
   ],
   providers: [
     StatusBar,
