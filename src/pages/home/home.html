@@ -24,22 +24,10 @@
       </ion-col>
     </ion-row>
     <ion-slides slidesPerView="2">
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
+      <ion-slide *ngFor="let book of books">
+        <ion-card (click)="getBookDetail()">
+          <img src="{{book.cover}}" alt="Book Cover Image">
+          <h4>{{book.author}}</h4>
         </ion-card>
       </ion-slide>
     </ion-slides>
@@ -55,22 +43,10 @@
       </ion-col>
     </ion-row>
     <ion-slides slidesPerView="2">
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
+      <ion-slide *ngFor="let book of books">
+        <ion-card (click)="getBookDetail()">
+          <img src="{{book.cover}}" alt="Book Cover Image">
+          <h4>{{book.author}}</h4>
         </ion-card>
       </ion-slide>
     </ion-slides>
@@ -83,19 +59,9 @@
       </ion-col>
     </ion-row>
     <ion-slides>
-      <ion-slide>
+      <ion-slide *ngFor="let collection of collections">
         <ion-card>
-          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/collections.jpg" alt="Book Cover Image">
+          <img src="{{collection.image}}" alt="Book Cover Image">
         </ion-card>
       </ion-slide>
     </ion-slides>
@@ -111,22 +77,10 @@
       </ion-col>
     </ion-row>
     <ion-slides slidesPerView="2">
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
+      <ion-slide *ngFor="let book of books">
+        <ion-card (click)="getBookDetail()">
+          <img src="{{book.cover}}" alt="Book Cover Image">
+          <h4>{{book.author}}</h4>
         </ion-card>
       </ion-slide>
     </ion-slides>
@@ -142,22 +96,10 @@
       </ion-col>
     </ion-row>
     <ion-slides slidesPerView="2">
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <img src="assets/imgs/bookcover.jpg" alt="Book Cover Image">
-          <h4>Author Name</h4>
+      <ion-slide *ngFor="let book of books">
+        <ion-card (click)="getBookDetail()">
+          <img src="{{book.cover}}" alt="Book Cover Image">
+          <h4>{{book.author}}</h4>
         </ion-card>
       </ion-slide>
     </ion-slides>
@@ -170,22 +112,10 @@
       </ion-col>
     </ion-row>
     <ion-slides slidesPerView="3">
-      <ion-slide>
+      <ion-slide *ngFor="let category of categories">
         <ion-card>
-          <h4>Category Name</h4>
-          <ion-icon name="ios-speedometer"></ion-icon>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <h4>Category Name</h4>
-          <ion-icon name="ios-speedometer"></ion-icon>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <h4>Category Name</h4>
-          <ion-icon name="ios-speedometer"></ion-icon>
+          <h4>{{category.name}}</h4>
+          <ion-icon name="{{category.image}}"></ion-icon>
         </ion-card>
       </ion-slide>
     </ion-slides>
