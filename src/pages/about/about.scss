@@ -1,4 +1,9 @@
 page-about {
+    ion-segment {
+        ion-segment-button {
+            color: #0093e9 !important;
+        }
+    }
     .content {
         &.content-ios {
             .fixed-content {
@@ -32,6 +37,11 @@ page-about {
                 border-radius: 20px;
                 background: #0093e9;
                 box-shadow: 0px 10px 20px 0px rgba(0,147,233,0.4);
+
+                ion-icon {
+                    padding-right: 5px;
+                    font-size: 1.5em;
+                }
             }
         }
     }

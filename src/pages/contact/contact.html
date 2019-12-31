@@ -1,17 +1,33 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Repetition
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+  <ion-card id="banner-card">
+    <h1>Spaced Repetition</h1>
+    <p>How it helps you to know more?</p>
+  </ion-card>
+  
+  <div id="summary-card-container">
+    <ion-row>
+      <ion-col col-3>
+        <ion-card class="add-card">
+          <ion-icon name="ios-add"></ion-icon>
+          <p>Add summary cards</p>
+        </ion-card>
+      </ion-col>
+      <ion-col col-3>
+        <ion-card class="book-card">
+          <img src="assets/imgs/bookcover.jpg" alt="Book Cover">
+          <h4>27 Cards</h4>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <button ion-button class="btn-custom">Repeat 27 cards</button>
 </ion-content>

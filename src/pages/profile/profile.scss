@@ -1,3 +1,28 @@
 page-profile {
+    #banner-card {
+        padding: 40px 20px;
+        border-radius: 10px;
+        background: #fff;
+        // background: url("../../assets/imgs/repetition.jpg");
+        box-shadow: 0px 10px 20px 0px rgba(117, 117, 117, 0.4);
+        // box-shadow: 0px 10px 20px 0px rgba(0,147,233,0.4);
 
+        h1 {
+            font-weight: 600;
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 600;
+            color: #0093e9;
+        }
+
+        span {
+            color: gray;
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
 }
