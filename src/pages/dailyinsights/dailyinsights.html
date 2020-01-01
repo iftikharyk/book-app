@@ -8,7 +8,7 @@
 
 <ion-content padding>
   <div id="custom-cancel">
-    <ion-icon name="close" (click)="this.viewCtrl.dismiss();"></ion-icon>
+    <ion-icon name="md-close" (click)="this.viewCtrl.dismiss();"></ion-icon>
   </div>
 
   <div id="title">
@@ -18,28 +18,11 @@
   </div>
 
   <div id="daily-slides">
-    <ion-slides centeredSlides="true" pager>
-      <ion-slide>
+    <ion-slides centeredSlides="true" pager paginationType="progress">
+      <ion-slide *ngFor="let card of dailyCards;">
         <ion-card>
           <div class="daily-card-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!       
-            </p>
-          </div>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <div class="daily-card-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!       
-            </p>
-          </div>
-        </ion-card>
-      </ion-slide>
-      <ion-slide>
-        <ion-card>
-          <div class="daily-card-content">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!       
-            </p>
+            <p>{{card.text}}</p>
           </div>
         </ion-card>
       </ion-slide>

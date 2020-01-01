@@ -29,31 +29,36 @@ export class HomePage {
         "title": "Book Title",
         "category": "Category Name",
         "author": "Author Name",
-        "cover": "assets/imgs/bookcover.jpg"
+        "cover": "assets/imgs/bookcover.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit."
       },
       {
         "title": "Book Title",
         "category": "Category Name",
         "author": "Author Name2",
-        "cover": "assets/imgs/bookcover.jpg"
+        "cover": "assets/imgs/bookcover.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit."
       },
       {
         "title": "Book Title",
         "category": "Category Name",
         "author": "Author Name3",
-        "cover": "assets/imgs/bookcover.jpg"
+        "cover": "assets/imgs/bookcover.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit."
       },
       {
         "title": "Book Title",
         "category": "Category Name",
         "author": "Author Name4",
-        "cover": "assets/imgs/bookcover.jpg"
+        "cover": "assets/imgs/bookcover.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit."
       },
       {
         "title": "Book Title",
         "category": "Category Name",
         "author": "Author Name5",
-        "cover": "assets/imgs/bookcover.jpg"
+        "cover": "assets/imgs/bookcover.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus repudiandae atque doloribus assumenda repellat, ipsam nam temporibus! Recusandae accusamus perspiciatis harum consequuntur corporis vitae, quo dolore, cum laboriosam, obcaecati dignissimos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, delectus perspiciatis? Corporis dolores ipsum cumque quis labore quam quidem exercitationem. Reprehenderit sit, quidem doloremque quaerat culpa provident labore vel consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit."
       }
     ];
 

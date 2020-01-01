@@ -48,6 +48,7 @@ page-dailyinsights {
             ion-slides {
                 ion-slide {
                     .slide-zoom {
+                        padding-bottom: 25px;
     
                         ion-card {
                             background: #fff;
@@ -71,9 +72,13 @@ page-dailyinsights {
                     
                 }
 
-                // .swiper-container-horizontal > .swiper-pagination-progress {
-
-                // }
+                .swiper-container-horizontal > .swiper-pagination-progress {
+                    bottom: 0;
+                    top: auto;
+                    width: 90%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
             }
         }
     }

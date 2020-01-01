@@ -1,0 +1,40 @@
+<!--
+  Generated template for the BookcardsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-content padding>
+  <div id="custom-cancel">
+    <ion-icon name="md-close" (click)="this.viewCtrl.dismiss();"></ion-icon>
+  </div>
+
+  <div id="title">
+    <h3>Cards</h3>
+    <p class="book-title">The 7 Habits of Highly Effective People</p>
+  </div>
+
+  <div id="book-cards">
+    <ion-slides centeredSlides="true" pager paginationType="fraction">
+      <ion-slide *ngFor="let card of cards">
+        <ion-card>
+          <div class="book-card-content">
+            <h3>{{card.title}}</h3>
+            <p>{{card.text}}</p>
+          </div>
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div id="button-control">
+    <ion-row>
+      <ion-col>
+        <div class="cards-button">
+          <button ion-button class="btn-custom"><ion-icon name="md-add"></ion-icon> Add Deck to Repetition</button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

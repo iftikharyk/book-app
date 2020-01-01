@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 
 /**
- * Generated class for the DailyinsightsPage page.
+ * Generated class for the BookcardsPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,41 +10,47 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 
 @IonicPage()
 @Component({
-  selector: 'page-dailyinsights',
-  templateUrl: 'dailyinsights.html',
+  selector: 'page-bookcards',
+  templateUrl: 'bookcards.html',
 })
-export class DailyinsightsPage {
-  dailyCards: any;
+export class BookcardsPage {
+  cards: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {
-    this.loadCardDemo();
+    this.loadDemoCards();
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad DailyinsightsPage');
-  }
-
-  loadCardDemo() {
-    this.dailyCards = [
+  loadDemoCards() {
+    this.cards = [
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       },
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       },
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       },
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       },
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       },
       {
+        "title": "Deep relationship matter",
         "text": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam exercitationem ut porro. Sunt consequatur laborum neque temporibus voluptate, sed praesentium? Corrupti quibusdam est atque eos praesentium id reiciendis soluta voluptate!"
       }
     ];
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad BookcardsPage');
   }
 
 }
