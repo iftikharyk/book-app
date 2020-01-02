@@ -1,9 +1,10 @@
 page-dailyinsights {
     ion-content {
-        background: url("../../assets/imgs/daily.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: left center;
+        // background: url("../../assets/imgs/daily.png");
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // background-position: left center;
+        background: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
 
         #custom-cancel {
             position: absolute;

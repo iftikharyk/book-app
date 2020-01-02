@@ -67,6 +67,33 @@ page-home {
         }
     }
 
+    .book-slider.collection {
+        ion-slide {
+            ion-card {
+                position: relative;
+
+                img {
+                    z-index: 1;
+                }
+
+                span {
+                    position: absolute;
+                    z-index: 2;
+                    top: 0;
+                    width: 70%;
+                    left: 0;
+                    text-align: left;
+                    height: 80%;
+                    font-size: 25px;
+                    font-weight: 600;
+                    color: #fff;
+                    text-shadow: 2px 2px #000000;
+                    padding: 25px 20px;
+                }
+            }
+        }
+    }
+
     .categories {
 
         margin-top: 10px;

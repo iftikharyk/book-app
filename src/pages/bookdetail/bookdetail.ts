@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
+import { DocumentViewer, DocumentViewerOptions } from '@ionic-native/document-viewer';
+import { Platform } from 'ionic-angular';
 import { BookcardsPage } from '../bookcards/bookcards';
 
 /**
@@ -19,8 +21,12 @@ export class BookdetailPage {
   categories: any;
   collections: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public modalCtrl: ModalController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController, public modalCtrl: ModalController, private doc: DocumentViewer, public platform: Platform) {
     this.loadDemoData();
+
+    // this.platform.ready().then((readySource) => {
+    //   console.log('Platform is ready for ', readySource);
+    // });
   }
 
   ionViewDidLoad() {
@@ -136,5 +142,36 @@ export class BookdetailPage {
   openCards() {
     const modal = this.modalCtrl.create(BookcardsPage);
     modal.present();
+  }
+
+  getPdf() {
+    const bookPath = "assets/pdf/sample.pdf";
+    return this.figureOutFile(bookPath);
+  }
+
+  figureOutFile(file: string) {
+    if (this.platform.is('ios')) {
+      const baseUrl = location.href.replace('/index.html', '');
+      const fileHere =  baseUrl + `/assets/${file}`;
+      console.log("ios =>", fileHere);
+      return this.readBook(fileHere);
+    } else if (this.platform.is('android')) {
+      const fileHere = `file:///android_asset/www/assets/${file}`;
+      console.log("android =>", fileHere);
+      return this.readBook(fileHere);  
+    } else {
+      const fileHere = "assets/pdf/sample.pdf";
+      return this.readBook(fileHere);
+    }
+    
+  }
+
+  readBook(file: string) {
+    const options: DocumentViewerOptions = {
+      title: 'Sample Pdf'
+    }
+    // const bookLink = "assets/pdf/sample.pdf";
+    console.log(file);
+    return this.doc.viewDocument(file, "application/pdf", options);
   }
 }

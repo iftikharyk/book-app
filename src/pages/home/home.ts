@@ -6,6 +6,7 @@ import { NewreleasesPage } from '../newreleases/newreleases';
 import { CommingsoonPage } from '../commingsoon/commingsoon';
 import { AllbooksPage } from '../allbooks/allbooks';
 import { BookdetailPage } from '../bookdetail/bookdetail';
+import { SearchareaPage } from '../searcharea/searcharea';
 
 @Component({
   selector: 'page-home',
@@ -103,27 +104,27 @@ export class HomePage {
 
     this.collections = [
       {
-        "name": "Collection of books",
+        "name": "Best Books of 2019",
         "image": "assets/imgs/collections.jpg"
       },
       {
-        "name": "Collection of books",
+        "name": "Malcolm Galdwell",
         "image": "assets/imgs/collections.jpg"
       },
       {
-        "name": "Collection of books",
+        "name": "Top-5 to Launch Unicorn Startup",
         "image": "assets/imgs/collections.jpg"
       },
       {
-        "name": "Collection of books",
+        "name": "Top-5 to Become a High Performer",
         "image": "assets/imgs/collections.jpg"
       },
       {
-        "name": "Collection of books",
+        "name": "Top-5 to Win at Work",
         "image": "assets/imgs/collections.jpg"
       },
       {
-        "name": "Collection of books",
+        "name": "Top-5 to get Smarter",
         "image": "assets/imgs/collections.jpg"
       }
     ];
@@ -152,6 +153,11 @@ export class HomePage {
 
   getBookDetail() {
     const modal = this.modalCtrl.create(BookdetailPage);
+    modal.present();
+  }
+
+  openSearch() {
+    const modal = this.modalCtrl.create(SearchareaPage);
     modal.present();
   }
 

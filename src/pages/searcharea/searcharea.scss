@@ -1,0 +1,51 @@
+page-searcharea {
+    .search-bar {
+        width: 100%;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #cecece;
+
+        ion-searchbar {
+            background: transparent !important;
+            border: none;
+            // margin-left: auto;
+            width: 100%;
+            padding: 0px;
+    
+            .searchbar-input {
+                background: transparent !important;
+            }
+        }
+    }
+
+    .search-results {
+        margin-top: 15px;
+
+        // ion-item-sliding {
+        //     .item-wrapper:last-child .item-block {
+        //         border: none;
+
+        //         .item-inner {
+        //             border-bottom: 0.55px solid rgb(200, 199, 204);
+        //         }
+        //     }
+        // }
+
+        .list-ios > .item-wrapper:last-child .item-block {
+            border: none;
+
+            .item-inner {
+                border-bottom: 0.55px solid rgb(200, 199, 204);
+            }
+        }
+
+        ion-thumbnail {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            min-height: 70px;
+
+            img {
+                height: 70px;
+            }
+        }
+    }
+}
